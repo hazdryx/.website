@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Yaldevi:wght@200;300;400&display=swap');
+* {
+  font-family: 'Yaldevi', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3 {
+  font-family: 'Orbitron', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+html {
+  font-size: 1.875vh;
+}
+@media only screen and (max-aspect-ratio: 4/3)  {
+  html {
+    font-size: 2.25vw;
+  }
+  a, p, span {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-height: 360px) {
+  html {
+    font-size: 2.5vh;
+  }
+  a, p, span {
+    font-size: 1.5em;
+  }
+}
