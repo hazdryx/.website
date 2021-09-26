@@ -13,17 +13,9 @@ html {
 }
 @media only screen and (max-aspect-ratio: 4/3)  {
   html {
-    font-size: 2.25vw;
+    font-size: 2.75vw;
   }
   a, p, span {
-    font-size: 2rem;
-  }
-}
-@media only screen and (max-height: 360px) {
-  html {
-    font-size: 2.5vh;
-  }
-  a, p, span {
-    font-size: 1.5em;
+    font-size: 1.75rem;
   }
 }

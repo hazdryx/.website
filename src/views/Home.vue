@@ -38,7 +38,9 @@ export default {
 
   #info-text {
     position: absolute;
-    width: 38em;
+    width: 36em;
+    max-width: 100%;
+    padding: 1em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -47,7 +49,7 @@ export default {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    height: 24em;
+    height: 28em;
     margin-bottom: 1em;
   }
   #info-text > p {
