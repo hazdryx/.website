@@ -1,10 +1,10 @@
 <template>
   <div id="home" class="container">
-    <Banner :src="require('@/assets/banner.jpg')">
+    <Banner id="main-banner" :src="require('@/assets/banner.jpg')">
       <div id="info-text">
-        <h1 style="font-size: 8em; text-align: center; margin-bottom: 0.8rem">Hazdryx</h1>
+        <img src="@/assets/logo.png">
         <p>
-          Welcome to my small corner of the internet; my name is Chris (aka Hazdryx). I'm a C# and JavaScript software developer.
+          Welcome to my small corner of the internet; my name is Chris (aka <span class="highlight">Hazdryx</span>). I'm a C# and JavaScript software developer.
           This website is still in the works, but feel free to check out my socials and GitHub!
         </p>
       </div>
@@ -32,6 +32,10 @@ export default {
 </script>
 
 <style>
+  #main-banner > img {
+    filter: grayscale(0.66) brightness(0.5);
+  }
+
   #info-text {
     position: absolute;
     width: 38em;
@@ -39,6 +43,22 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  #info-text > img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 24em;
+    margin-bottom: 1em;
+  }
+  #info-text > p {
+    text-align: center;
+  }
+  #info-text span.highlight {
+    background: linear-gradient(to right, #5AE, #A5E);
+    background-clip: text;
+    color: transparent;
+  }
+
   #info-socials {
     position: absolute;
     bottom: 1em;
