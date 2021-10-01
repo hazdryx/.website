@@ -19,29 +19,26 @@
     <div>
       <Project name="FastBitmap" href="https://github.com/hazdryx/FastBitmap" :img="require('@/assets/projects/fastbitmap.svg')">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi, 
-          aperiam vel esse eius, obcaecati enim iste expedita optio praesentium id 
-          in molestias soluta! Asperiores aliquam voluptatibus vero eaque ipsa 
-          pariatur inventore at qui praesentium numquam, fugiat ipsum. Suscipit 
-          quisquam nemo odit quam recusandae quos dolore, deleniti debitis atque sit?
+          FastBitmap is a .NET library that wraps the System.Drawing.Bitmap class 
+          for improved pixel read/write performance. I wrote this library to provide 
+          an intuitive platform for image manipulation on .NET Standard, similar 
+          to GetPixel and SetPixel on the original Bitmap. It now provides more 
+          functionality to make it faster, such as bulk pixel operations and manipulating 
+          the image using primitives.
         </p>
       </Project>
-      <Project name="FastBitmap" href="https://github.com/hazdryx/FastBitmap" :img="require('@/assets/projects/fastbitmap.svg')">
+      <Project name="cino" href="https://github.com/hazdryx/cino" :img="require('@/assets/projects/cino.svg')">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi, 
-          aperiam vel esse eius, obcaecati enim iste expedita optio praesentium id 
-          in molestias soluta! Asperiores aliquam voluptatibus vero eaque ipsa 
-          pariatur inventore at qui praesentium numquam, fugiat ipsum. Suscipit 
-          quisquam nemo odit quam recusandae quos dolore, deleniti debitis atque sit?
+          Clock In N' Out (aka cino) is a cli timesheet application differentiated by workspaces, built using the Node.js platform.
         </p>
       </Project>
-      <Project name="FastBitmap" href="https://github.com/hazdryx/FastBitmap" :img="require('@/assets/projects/fastbitmap.svg')">
+      <Project name="lendr" href="https://github.com/hazdryx/lendr" :img="require('@/assets/projects/lendr.svg')">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi, 
-          aperiam vel esse eius, obcaecati enim iste expedita optio praesentium id 
-          in molestias soluta! Asperiores aliquam voluptatibus vero eaque ipsa 
-          pariatur inventore at qui praesentium numquam, fugiat ipsum. Suscipit 
-          quisquam nemo odit quam recusandae quos dolore, deleniti debitis atque sit?
+          lendr is a minimalistic web app built on the MEVN stack for tracking loans 
+          between friends and family. I created this because I was lending money to 
+          my friends and family frequently. It features a userless system, which uses 
+          lender and borrower tokens instead to manage the data. I also implemented a 
+          simplistic autopay system so I wouldn't forget to update it.
         </p>
       </Project>
     </div>

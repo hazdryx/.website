@@ -22,6 +22,8 @@ export default {
     },
     calcY() {
       this.y = (this.$el.offsetTop - window.scrollY) / (window.innerHeight / 1.5) - 0.25;
+      this.y = this.y >= 0 ? this.y <= 1 ? this.y : 1 : 0;
+
       this.color.r = this.y * 16 + (1 - this.y) * 148;
       this.color.g = (1 - this.y) * 16 + (this.y) * 148;
       this.color.b = 216;
@@ -45,7 +47,6 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .project:nth-child(even) {
   flex-direction: row-reverse;
@@ -55,12 +56,17 @@ export default {
   padding: 0 1em;
   margin: 1.5em 0;
 }
-.project > div > img {
+.project > div:first-child {
+  position: relative;
+}
+.project > div:first-child > img {
+  position: relative;
+  top: 50%; 
+  transform: translate(0, -50%);
   width: 50%;
 }
 
 .project .title {
-  color: rgb(28, 140, 209);
   text-decoration: none;
 }
 .project .title:hover {
