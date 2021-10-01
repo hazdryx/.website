@@ -10,14 +10,9 @@
           libraries to support them.
         </p>
       </div>
-      <div id="info-socials">
-        <a href="https://github.com/hazdryx" class="icon"><fa-icon :icon="['fab', 'github']" /></a>
-        <a href="https://linkedin.com/in/hazdryx" class="icon"><fa-icon :icon="['fab', 'linkedin']" /></a>
-        <a href="https://twitter.com/hazdryx" class="icon"><fa-icon :icon="['fab', 'twitter']" /></a>
-        <a href="https://facebook.com/hazdryx" class="icon"><fa-icon :icon="['fab', 'facebook']" /></a>
-        <a href="https://github.com/hazdryx/.website" class="icon"><fa-icon :icon="['fas', 'code-branch']" /></a>
-      </div>
     </Banner>
+
+    <!-- Projects -->
     <div>
       <h1 class="header">Open Source</h1>
       <Project name="FastBitmap" href="https://github.com/hazdryx/FastBitmap" :img="require('@/assets/projects/fastbitmap.svg')">
@@ -91,29 +86,11 @@ export default {
     color: transparent;
   }
 
-  #info-socials {
-    position: absolute;
-    bottom: 1em;
-    width: 100%;
-    text-align: center;
-  }
-
-  a.icon {
-    margin: 0.25em;
-    color: #EEE;
-  }
-  a.icon:hover {
-    color: #CCC;
-  }
-  a.icon > svg {
-    font-size: 2.5em;
-  }
-
   h1.header {
     font-size: 4em;
     text-align: center;
     color: #222;
     letter-spacing: 0.1em;
-    padding: 0.5rem 0 1rem 0;
+    padding: 1rem 0 0.5rem 0;
   }
 </style>
