@@ -4,7 +4,7 @@
     <img :src="this.img" />
   </div>
   <div>
-    <h2><a class="title" :href="this.href" :style="{color: rgba(this.color)}">{{this.name}}</a></h2><br>
+    <a class="title" :href="this.href" :style="{color: rgba(this.color)}"><h2>{{this.name}}</h2></a><br>
     <div class="content">
       <slot></slot>
     </div>

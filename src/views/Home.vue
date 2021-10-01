@@ -4,8 +4,10 @@
       <div id="info-text">
         <img src="@/assets/logo.png">
         <p>
-          Welcome to my small corner of the internet; my name is Chris (aka <span class="highlight">Hazdryx</span>). I'm a C# and JavaScript software developer.
-          This website is still in the works, but feel free to check out my socials and GitHub!
+          Welcome to my small corner of the internet; my name is Chris 
+          (aka <span class="highlight">Hazdryx</span>). I'm a C# and 
+          JavaScript developer passionate about creating great software and 
+          libraries to support them.
         </p>
       </div>
       <div id="info-socials">
@@ -17,6 +19,7 @@
       </div>
     </Banner>
     <div>
+      <h1 class="header">Open Source</h1>
       <Project name="FastBitmap" href="https://github.com/hazdryx/FastBitmap" :img="require('@/assets/projects/fastbitmap.svg')">
         <p>
           FastBitmap is a .NET library that wraps the System.Drawing.Bitmap class 
@@ -104,5 +107,13 @@ export default {
   }
   a.icon > svg {
     font-size: 2.5em;
+  }
+
+  h1.header {
+    font-size: 4em;
+    text-align: center;
+    color: #222;
+    letter-spacing: 0.1em;
+    padding: 0.5rem 0 1rem 0;
   }
 </style>
