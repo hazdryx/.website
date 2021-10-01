@@ -16,17 +16,47 @@
         <a href="https://github.com/hazdryx/.website" class="icon"><fa-icon :icon="['fas', 'code-branch']" /></a>
       </div>
     </Banner>
+    <div>
+      <Project name="FastBitmap" href="https://github.com/hazdryx/FastBitmap" :img="require('@/assets/projects/fastbitmap.svg')">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi, 
+          aperiam vel esse eius, obcaecati enim iste expedita optio praesentium id 
+          in molestias soluta! Asperiores aliquam voluptatibus vero eaque ipsa 
+          pariatur inventore at qui praesentium numquam, fugiat ipsum. Suscipit 
+          quisquam nemo odit quam recusandae quos dolore, deleniti debitis atque sit?
+        </p>
+      </Project>
+      <Project name="FastBitmap" href="https://github.com/hazdryx/FastBitmap" :img="require('@/assets/projects/fastbitmap.svg')">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi, 
+          aperiam vel esse eius, obcaecati enim iste expedita optio praesentium id 
+          in molestias soluta! Asperiores aliquam voluptatibus vero eaque ipsa 
+          pariatur inventore at qui praesentium numquam, fugiat ipsum. Suscipit 
+          quisquam nemo odit quam recusandae quos dolore, deleniti debitis atque sit?
+        </p>
+      </Project>
+      <Project name="FastBitmap" href="https://github.com/hazdryx/FastBitmap" :img="require('@/assets/projects/fastbitmap.svg')">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi, 
+          aperiam vel esse eius, obcaecati enim iste expedita optio praesentium id 
+          in molestias soluta! Asperiores aliquam voluptatibus vero eaque ipsa 
+          pariatur inventore at qui praesentium numquam, fugiat ipsum. Suscipit 
+          quisquam nemo odit quam recusandae quos dolore, deleniti debitis atque sit?
+        </p>
+      </Project>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Banner from '@/components/Banner.vue';
+import Project from '@/components/Project.vue';
 
 export default {
   name: 'Home',
   components: {
-    Banner
+    Banner, Project
   }
 }
 </script>

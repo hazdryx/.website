@@ -3,8 +3,8 @@
 </template>
 
 <style>
-#app {
-  color: #EEE;
-  background-color: #181A1C;
-}
+  body {
+    color: #111;
+    background-color: #EEE;
+  }
 </style>

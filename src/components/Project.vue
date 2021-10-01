@@ -1,0 +1,74 @@
+<template>
+<div class="project">
+  <div>
+    <img :src="this.img" />
+  </div>
+  <div>
+    <h2><a class="title" :href="this.href" :style="{color: rgba(this.color)}">{{this.name}}</a></h2><br>
+    <div class="content">
+      <slot></slot>
+    </div>
+  </div>
+</div>
+</template>
+
+<script>
+export default {
+  name: 'Project',
+  props: ['name', 'href', 'img'],
+  methods: {
+    rgba(col) {
+      return `rgba(${col.r}, ${col.g}, ${col.b}, ${col.a})`
+    },
+    calcY() {
+      this.y = (this.$el.offsetTop - window.scrollY) / (window.innerHeight / 1.5) - 0.25;
+      this.color.r = this.y * 16 + (1 - this.y) * 148;
+      this.color.g = (1 - this.y) * 16 + (this.y) * 148;
+      this.color.b = 216;
+    }
+  },
+  data() {
+    return {
+      y: 0,
+      color: { r: 0, g: 0, b: 0, a: 1 }
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.calcY);
+    this.calcY();
+  }
+}
+</script>
+
+<style>
+.project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.project > div {
+  width: 50vh;
+  padding: 0 1em;
+  margin: 1.5em 0;
+}
+.project > div > img {
+  width: 50%;
+}
+
+.project .title {
+  color: rgb(28, 140, 209);
+  text-decoration: none;
+}
+.project .title:hover {
+  text-decoration: underline;
+}
+
+.project:nth-child(odd) > div:first-child, .project:nth-child(even) > div:last-child {
+  border-right: 1px solid #CCC;
+  text-align: right;
+}
+</style>
