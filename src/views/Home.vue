@@ -30,7 +30,7 @@
           Clock In N' Out (aka cino) is a cli timesheet application differentiated by workspaces, built using the Node.js platform.
         </p>
       </Project>
-      <Project name="lendr" href="https://github.com/hazdryx/lendr" :img="require('@/assets/projects/lendr.svg')">
+      <Project name="lendr" href="https://github.com/hazdryx/lendr-frontend" :img="require('@/assets/projects/lendr.svg')">
         <p>
           lendr is a minimalistic web app built on the MEVN stack for tracking loans 
           between friends and family. I created this because I was lending money to 
